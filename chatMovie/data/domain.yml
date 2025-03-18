@@ -1,0 +1,41 @@
+version: "3.1"
+intents:
+- cumprimentar
+- agradecer
+- informar_genero
+- negar
+- pedir_ajuda
+- pedir_recomendacao
+- informar_genero_nao_listado
+
+entities:
+- genero
+
+slots:
+  genero:
+    type: text:
+    mappings:
+      - type: from_entity
+        entity: genero
+
+responses:
+  utter_cumprimentar:
+    - text: "Olá! Qual gênero de filme você prefere?"
+  
+  utter_perguntar_genero:
+    - text: "Qual gênero de filme você prefere?"
+
+  utter_recomendar_filme:
+    - text: "Para o gênero {genero}, recomendo: {filmes}."
+
+  utter_genero_nao_listado:
+    - text: "Desculpe, ainda não tenho recomendações para o gênero {genero}. Posso recomendar outros gêneros como: Ação, Comédia, Drama, Suspense, Romance e Ficção Científica."
+
+  utter_negar:
+    - text: "Tudo bem. Posso te recomendar outro gênero?"
+
+  utter_agradecer:
+    - text: "De nada! Espero que goste do filme."
+
+  utter_despedir:
+    - text: "Até logo! Se precisar de mais recomendações, é só chamar."

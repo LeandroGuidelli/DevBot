@@ -1,0 +1,53 @@
+version: "3.1"
+
+stories:
+- story: fluxo_feliz
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - action: action_recomendar_filme
+  - action: utter_agradecer
+  - action: utter_despedir
+
+- story: fluxo_genero_nao_listado
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: informar_genero_nao_listado
+  - action: action_recomendar_filme
+  - action: utter_agradecer
+  - action: utter_despedir
+
+- story: fluxo_pedir_recomendacao
+  steps:
+  - intent: pedir_recomendacao
+  - action: utter_perguntar_genero
+  - intent: informar_genero
+  - action: action_recomendar_filme
+  - action: utter_perguntar_outro
+  - intent: negar
+  - action: utter_despedir
+
+- story: fluxo_agradecimento
+  steps:
+  - intent: agradecer
+  - action: utter_agradecer
+  - action: utter_despedir
+
+- story: fluxo_insatisfacao
+  steps:
+  - intent: reclamar_recomendacao
+  - action: utter_pedir_desculpa
+  - action: utter_perguntar_genero_novamente
+  - intent: informar_genero
+  - action: action_recomendar_filme
+  - action: utter_agradecer
+  - action: utter_despedir
+
+- story: fluxo_conversa_aleatoria
+  steps:
+  - intent: conversa_aleatoria
+  - action: utter_responder_conversa_aleatoria
+  - action: utter_perguntar_ajuda
+  - intent: negar
+  - action: utter_despedir
