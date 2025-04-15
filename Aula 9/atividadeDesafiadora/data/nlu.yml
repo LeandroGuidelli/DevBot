@@ -1,0 +1,41 @@
+nlu:
+- intent: buscar_livro_titulo
+  examples: |
+    - Quero um livro chamado [Dom Casmurro](titulo_livro)
+    - Procure o livro [1984](titulo_livro)
+    - Você tem [O Pequeno Príncipe](titulo_livro)?
+    - Encontre o título [Cem Anos de Solidão](titulo_livro) para mim
+    - Estou procurando o livro [A Revolução dos Bichos](titulo_livro)
+    - Me mostre o livro chamado [Harry Potter e a Pedra Filosofal](titulo_livro)
+    - Gostaria de ler [O Hobbit](titulo_livro)
+    - Tem como encontrar o livro [Orgulho e Preconceito](titulo_livro)?
+    - Pode buscar o livro [O Senhor dos Anéis](titulo_livro)?
+    - Você consegue achar [O Código Da Vinci](titulo_livro)?
+    - Quero saber se tem [Memórias Póstumas de Brás Cubas](titulo_livro)
+
+- intent: buscar_livro_autor
+  examples: |
+    - Mostre livros do [Machado de Assis](nome_autor)
+    - Quero obras de [George Orwell](nome_autor)
+    - Me mostre livros escritos por [Clarice Lispector](nome_autor)
+    - Quais livros você tem do autor [J.K. Rowling](nome_autor)?
+    - Procure obras de [Stephen King](nome_autor)
+    - Tem livros de [Gabriel García Márquez](nome_autor)?
+    - Ache livros escritos por [Cecília Meireles](nome_autor)
+    - Você tem algo de [Edgar Allan Poe](nome_autor)?
+    - Me recomenda algum livro de [José Saramago](nome_autor)?
+    - Liste livros do autor [Paulo Coelho](nome_autor)
+
+- intent: buscar_livro_assunto
+  examples: |
+    - Quero livros sobre [fantasia](assunto_livro)
+    - Me indique obras de [história](assunto_livro)
+    - Busque livros relacionados a [ficção científica](assunto_livro)
+    - Você tem livros sobre [autoajuda](assunto_livro)?
+    - Estou procurando obras de [romance](assunto_livro)
+    - Indique livros com o tema [terror](assunto_livro)
+    - Tem algo sobre [aventura](assunto_livro)?
+    - Quais livros você tem que falem sobre [biografia](assunto_livro)?
+    - Mostre livros com o assunto [psicologia](assunto_livro)
+    - Ache livros relacionados a [tecnologia](assunto_livro)
+    - Me mostre obras que tratem de [filosofia](assunto_livro)

@@ -1,0 +1,15 @@
+rules:
+- rule: Responder busca por título
+  steps:
+  - intent: buscar_livro_titulo
+  - action: action_buscar_livro
+
+- rule: Responder busca por autor
+  steps:
+  - intent: buscar_livro_autor
+  - action: action_buscar_livro
+
+- rule: Responder busca por assunto
+  steps:
+  - intent: buscar_livro_assunto
+  - action: action_buscar_livro
