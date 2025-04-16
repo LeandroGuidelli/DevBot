@@ -1,0 +1,9 @@
+version: "3.1"
+nlu:
+  - intent: relatar_problema
+    examples: |
+      - não consigo acessar minha conta
+      - o aplicativo não funciona
+      - quero mudar meu plano
+      - o site está fora do ar
+      - o pedido não foi entregue

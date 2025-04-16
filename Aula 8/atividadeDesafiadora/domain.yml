@@ -1,0 +1,26 @@
+version: "3.1"
+
+intents:
+  - relatar_problema
+  - agradecer
+  - negar
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+  utter_ask_problema:
+    - text: "Qual problema você está enfrentando com o serviço?"
+
+  utter_encaminhar_humano:
+    - text: "Vou encaminhar você para um atendente humano. Por favor, aguarde."
+
+actions:
+  - action_fornecer_suporte

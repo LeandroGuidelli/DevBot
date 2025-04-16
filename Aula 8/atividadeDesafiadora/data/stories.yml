@@ -1,0 +1,6 @@
+version: "3.1"
+stories:
+  - story: Problema simples resolvido
+    steps:
+      - intent: relatar_problema
+      - action: action_fornecer_suporte
